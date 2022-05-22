@@ -4,11 +4,9 @@ import { useDispatch } from 'react-redux';
 import Button from '../Button/Button';
 import TextInput from '../TextInput/TextInput';
 
-const CardForm = props => {
+const CardForm = ({columnId}) => {
     const [title, setTitle] = useState('');
     const dispatch = useDispatch();
-
-    let columnId = props.columnId;
 
     const handleSubmit = e => {
         e.preventDefault();
