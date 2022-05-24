@@ -12,10 +12,9 @@ const List = () => {
         <h1 className={styles.title}>Things to do <span>soon!</span></h1>
       </header>
       <p className={styles.description}>Interesting things i want to check out</p>
-                <section className={styles.columns}>
-        {columns.map(column =>
-          <Column key={column.id} {...column} />)}
-                  </section>
+        <section className={styles.columns}>
+          {columns.map(column => <Column key={column.id} {...column} />)}
+        </section>
       <ColumnForm />
     </div>
   );
