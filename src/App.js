@@ -4,6 +4,7 @@ import About from './components/About/About';
 import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 import Container from './components/Container/Container';
 import NavBar from './components/NavBar/NavBar';
+import List from './components/List/List';
 import { Routes, Route} from 'react-router-dom';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/favorites" element={<Favorites />} />
+          <Route path="/list/:listId" element={<List />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes> 
       </Container>
