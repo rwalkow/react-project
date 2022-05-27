@@ -1,3 +1,4 @@
+@use "sass:math";
 @import '../../styles/settings.scss';
 
 .hero {
@@ -11,4 +12,11 @@
   font-style: italic;
   font-weight: normal;
   margin-top: (- $base-size * 3);
+}
+
+.cards {
+  padding: math.div($base-size, 2) 0;
+  width: calc(33% - 12px);
+  margin: 0 auto;
+  color: $color-dark;
 }
