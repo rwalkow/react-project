@@ -48,7 +48,7 @@ const initialState = {
     { id: 6, columnId: 3, isFavorite: false, title: 'Skyrim' }
   ],
 
-  searchInput: '',
+  searchString: '',
 };
 
 export default initialState;
