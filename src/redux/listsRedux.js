@@ -1,5 +1,11 @@
 import shortid from 'shortid';
 
+export const getListById = ({ lists }, listId) => lists.find(list => list.id === listId);
+export const getAllLists = ({ lists }) => lists;
+
+const createActionName = actionName => `app/lists/${actionName}`;
+const ADD_LIST = createActionName('ADD_LIST');
+
 const listsReducer = (statePart = [], action) => {
   switch(action.type) {
     case 'ADD_LIST':
@@ -8,5 +14,7 @@ const listsReducer = (statePart = [], action) => {
       return statePart;
   };
 };
+
+export const addList = payload => ({type: ADD_LIST, payload});
 
 export default listsReducer;

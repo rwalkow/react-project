@@ -14,25 +14,25 @@ const initialState = {
 
   columns: [
     {
-      id: '1',
+      id: 1,
       listId: '1',
       title: 'Books',
       icon: 'book',
     },
     {
-      id: '2',
+      id: 2,
       listId: '1',
       title: 'Movies',
       icon: 'film',
     },
     {
-      id: '3',
+      id: 3,
       listId: '1',
       title: 'Games',
       icon: 'gamepad',
     },
     {
-      id: '4',
+      id: 4,
       listId: '2',
       title: 'Computers',
       icon: 'laptop',
